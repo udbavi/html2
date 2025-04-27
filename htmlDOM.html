@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML DOM</h1>
+    <H6>KINDLY DO AS DIRECTED</H6>
+    <body bgcolor="lavender"></body>
+    <form>
+        <p>Enter your name:</p>
+        <input id="name">
+        <p>Enter your email:</p>
+        <input id="email">
+        <br><br>
+       <button type="button" onclick="validate()">login</button>
+    </form>
+    <p id="result "></p>
+    <script>
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+function validate(){
+    if (name==" "){
+        document.getElementById("result").innerHTML="please enter ypur name"
+    }
+    else if (email==" "){
+        document.getElementById("result").innerHTML="please enter ypur email"
+    }
+}
+
+    </script>
+</body>
+</html>
