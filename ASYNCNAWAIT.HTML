@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H2 ID="RESULT"></H2>
+    <SCRIPT>
+        async function add(v,t){
+            response=await v+t;
+            display(response)
+        }
+        function display(some){
+            document.getElementById("RESULT").innerHTML=some;
+        }
+        add(12,16)
+    </SCRIPT>
+</body>
+</html>
