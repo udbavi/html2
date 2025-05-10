@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimeter Calculator</title>
+</head>
+<body>
+    <script>
+        var choice = prompt("Welcome to Perimeter Calculator! \nPlease Enter Your Choice.\n1.Perimeter of rectangle. \n2.Perimeter of triangle. \n3.Perimeter of circle. \n4.Perimeter of square. \n5.Perimeter of parallelogram.");
+        
+        if(choice == '1'){
+            var l = prompt('Enter the length of the rectangle');
+            var b = prompt('Enter the breadth of the rectangle');
+            var result = 2 * (Number(l) + Number(b)); // Perimeter of rectangle = 2 * (length + breadth)
+            alert('The perimeter is ' + result);
+        }
+        
+        if(choice == '2'){
+            var a = prompt('Enter the first side of the triangle');
+            var b = prompt('Enter the second side of the triangle');
+            var c = prompt('Enter the third side of the triangle');
+            var result = Number(a) + Number(b) + Number(c); // Perimeter of triangle = a + b + c
+            alert('The perimeter is ' + result);
+        }
+        
+        if(choice == '3'){
+            var r = prompt('Enter the radius of the circle');
+            var result = 2 * 3.14 * Number(r); // Perimeter (circumference) of circle = 2 * π * radius
+            alert('The perimeter is ' + result);
+        }
+        
+        if(choice == '4'){
+            var sl = prompt('Enter the side length of the square');
+            var result = 4 * Number(sl); // Perimeter of square = 4 * side length
+            alert('The perimeter is ' + result);
+        }
+        
+        if(choice == '5'){
+            var a = prompt('Enter the first side of the parallelogram');
+            var b = prompt('Enter the second side of the parallelogram');
+            var result = 2 * (Number(a) + Number(b)); // Perimeter of parallelogram = 2 * (side1 + side2)
+            alert('The perimeter is ' + result);
+        }
+      
+    </script>
+</body>
+</html>
