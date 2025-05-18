@@ -1,4 +1,4 @@
- function showDate() {
+function showDate() {
             var date = new Date();
             var day = date.getDate();
             var month = date.getMonth() + 1; // Months are zero-indexed
