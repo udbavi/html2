@@ -1,5 +1,5 @@
 var dice;
-var dices = ['&#9856','&#9857','&#9858','&#9859','&#9860','&#9861'];
+var dices = [1,3,5,7,9,];
 var stopped = true;
 var t;
 
