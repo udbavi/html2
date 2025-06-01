@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(230, 233, 63);
+    }
+    .carousel-container {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        height:300px;
+
+        .myslides {
+            display:none;
+            max-height:100%;
+            max-width:100%;
+        }
+
+    }
+</style>
+<body>
+    <section class="carousel-container">
+
+        <img class="myslides" src="https://cdn.pixabay.com/photo/2024/02/01/12/19/grasses-8545863_640.jpg" style="height:500px">
+        <img class="myslides" src="https://cdn.pixabay.com/photo/2023/10/18/18/59/tomatoes-8324940_640.jpg" style="height:500px">
+    </section>
+    <script>
+        var myIndex =0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            for (i = 0; i < x.length;i++){
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel,3000);
+        }
+        
+        
+
+    </script>
+</body>
+</html>
